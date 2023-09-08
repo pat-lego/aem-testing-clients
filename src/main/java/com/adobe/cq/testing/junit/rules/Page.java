@@ -88,8 +88,8 @@ public class Page extends ExternalResource {
     @Override
     protected void after() {
         try {
-            getClient().deletePage(new String[]{getPath()}, true, false);
-            logger.info("Deleted page at {}", getPath());
+            // getClient().deletePage(new String[]{getPath()}, true, false);
+            // logger.info("Deleted page at {}", getPath());
         } catch (Exception e) {
             logger.error("Unable to delete the page", e);
         }
